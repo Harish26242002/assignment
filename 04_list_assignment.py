@@ -26,7 +26,7 @@ for i in x:
     print(X,end=",")
 
 # Question 2: Find the sum of all even numbers in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-print("\nQuestion 2: Find the sum of all even numbers in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]")
+print("\n\nQuestion 2: Find the sum of all even numbers in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]")
 L=list(range(1,11,2))
 print(sum(L))
 
@@ -129,11 +129,11 @@ print(F)
 
 # Question 15: Transpose the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print("\nQuestion 15: Transpose the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
-
+##
 
 # Question 16: Find the maximum value in each sublist of [[1, 5, 3], [9, 2, 7], [4, 8, 6]]
 print("\nQuestion 16: Find the maximum value in each sublist of [[1, 5, 3], [9, 2, 7], [4, 8, 6]]")
-Y=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Y=[[1, 5, 3], [9, 2, 7], [4, 8, 6]]
 D=[]
 for i in Y:
     Z=max(i)
@@ -172,7 +172,8 @@ print(B)
 
 # Question 20: Create a list of mixed data types: [1, "hello", 3.14, True, [1, 2, 3]]
 print("\nQuestion 20: Create a list of mixed data types: [1, 'hello', 3.14, True, [1, 2, 3]]")
-print(list([1, "hello", 3.14, True, [1, 2, 3]]))
+A=[1, "hello", 3.14, True, [1, 2, 3]]
+print(list(A))
 
 # Question 21: Find the length of each string in ["apple", "banana", "cherry", "date"]
 print("\nQuestion 21: Find the length of each string in ['apple', 'banana', 'cherry', 'date']")
@@ -211,6 +212,7 @@ Q=[]
 for i in M:
     Q.append(i['name'])
 print(Q)
+
 # Question 26: Find the person with maximum age in list of dictionaries
 print("\nQuestion 26: Find the person with maximum age in list of dictionaries")
 L=[]
@@ -220,87 +222,138 @@ print(max(L))
 
 # Question 27: Create a 4D list: [[[[1, 2], [3, 4]], [[5, 6], [7, 8]]], [[[9, 10], [11, 12]], [[13, 14], [15, 16]]]]
 print("\nQuestion 27: Create a 4D list: [[[[1, 2], [3, 4]], [[5, 6], [7, 8]]], [[[9, 10], [11, 12]], [[13, 14], [15, 16]]]]")
-# Your code here
+A=[[1, 2], [3, 4]]
+B=[[5, 6], [7, 8]]
+C=[[9, 10], [11, 12]]
+D=[[13, 14], [15, 16]]
+e=A,B,C,D
+print(e)
 
 # Question 28: Find the maximum value in 4D list
 print("\nQuestion 28: Find the maximum value in 4D list")
-# Your code here
+u=[]
+for i in e:
+    for j in i:
+        for k in j:
+                u.append(Q)
+print(max(Q))
+
 
 # Question 29: Create a list of sets: [{1, 2, 3}, {4, 5, 6}, {7, 8, 9}]
 print("\nQuestion 29: Create a list of sets: [{1, 2, 3}, {4, 5, 6}, {7, 8, 9}]")
-# Your code here
+L=[{1, 2, 3}, {4, 5, 6}, {7, 8, 9}]
+print(L)
 
 # Question 30: Find the union of all sets in list of sets
 print("\nQuestion 30: Find the union of all sets in list of sets")
-# Your code here
+p=set.union(*L)
+print(p)
 
 # Question 31: Create a list of complex numbers: [1+2j, 3+4j, 5+6j]
 print("\nQuestion 31: Create a list of complex numbers: [1+2j, 3+4j, 5+6j]")
-# Your code here
+S=list([1+2j, 3+4j, 5+6j])
+print(S)
 
 # Question 32: Find the magnitude of each complex number in list
 print("\nQuestion 32: Find the magnitude of each complex number in list")
-# Your code here
+mag=[]
+for i in S:
+    mag.append(i)
+print(i)
 
 # Question 33: Create a nested list with different levels: [1, [2, 3], [4, [5, 6]], 7]
 print("\nQuestion 33: Create a nested list with different levels: [1, [2, 3], [4, [5, 6]], 7]")
-# Your code here
+l=[1, [2, 3], [4, [5, 6]], 7]
+print(l)
+
 
 # Question 34: Count the depth of nesting in [1, [2, 3], [4, [5, 6]], 7]
 print("\nQuestion 34: Count the depth of nesting in [1, [2, 3], [4, [5, 6]], 7]")
-# Your code here
+o=range(len(l))
+print(o)
 
 # Question 35: Create a list of functions: [len, str, int, float]
 print("\nQuestion 35: Create a list of functions: [len, str, int, float]")
-# Your code here
+print(0,'123',96,8.8)
 
 # Question 36: Apply each function in list to string "123"
 print("\nQuestion 36: Apply each function in list to string '123'")
-# Your code here
+print('123')
+result=()
 
 # Question 37: Create a list of lambda functions: [lambda x: x*2, lambda x: x**2, lambda x: x+1]
 print("\nQuestion 37: Create a list of lambda functions: [lambda x: x*2, lambda x: x**2, lambda x: x+1]")
-# Your code here
+K=[lambda x: x*2, lambda x: x**2, lambda x: x+1]
+print(K)
 
 # Question 38: Apply each lambda function to 5
 print("\nQuestion 38: Apply each lambda function to 5")
-# Your code here
+for i in K:
+    print(i(5))
+       
 
 # Question 39: Create a list of classes: [list, dict, set, tuple]
 print("\nQuestion 39: Create a list of classes: [list, dict, set, tuple]")
-# Your code here
+O=list(range(0,7))
+P=dict({'harish':'male'})
+Q=set(range(0,4))
+R=tuple(range(0,7))
+print([O,P,Q,R])
 
 # Question 40: Create instances of each class in list
 print("\nQuestion 40: Create instances of each class in list")
-# Your code here
+
 
 # Question 41: Create a list of None values: [None, None, None, None]
 print("\nQuestion 41: Create a list of None values: [None, None, None, None]")
-# Your code here
+N=[None, None, None, None]
+print(N)
+
 
 # Question 42: Replace all None values with 0 in list
 print("\nQuestion 42: Replace all None values with 0 in list")
-# Your code here
+z=[]
+for i in N:
+    i=0
+    z.append(i)
+print(z)
+
 
 # Question 43: Create a list of boolean values: [True, False, True, False]
 print("\nQuestion 43: Create a list of boolean values: [True, False, True, False]")
-# Your code here
+P=[True, False, True, False]
+print(P)
+
+
 
 # Question 44: Count True values in boolean list
 print("\nQuestion 44: Count True values in boolean list")
-# Your code here
+count=0
+for i in P:
+    if i == True:
+        count+=1
+print(count)
+        
 
 # Question 45: Create a list of ranges: [range(3), range(5), range(2)]
 print("\nQuestion 45: Create a list of ranges: [range(3), range(5), range(2)]")
-# Your code here
+S=list(range(0,3))
+F=list(range(0,5))
+G=list(range(0,2))
+O=[S,F,G]
+print(O)
 
 # Question 46: Convert each range to list
 print("\nQuestion 46: Convert each range to list")
-# Your code here
+C=[]
+for i in O:
+    P=len(i)
+    C.append(P)
+print(C)
 
 # Question 47: Create a list of generators: [(x for x in range(3)), (x for x in range(5))]
 print("\nQuestion 47: Create a list of generators: [(x for x in range(3)), (x for x in range(5))]")
-# Your code here
+
 
 # Question 48: Convert each generator to list
 print("\nQuestion 48: Convert each generator to list")
@@ -308,7 +361,7 @@ print("\nQuestion 48: Convert each generator to list")
 
 # Question 49: Create a list of iterators: [iter([1, 2, 3]), iter([4, 5, 6])]
 print("\nQuestion 49: Create a list of iterators: [iter([1, 2, 3]), iter([4, 5, 6])]")
-# Your code here
+
 
 # Question 50: Extract all elements from each iterator
 print("\nQuestion 50: Extract all elements from each iterator")
